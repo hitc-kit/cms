@@ -1,2 +1,1 @@
-# cms
 Content management system.
