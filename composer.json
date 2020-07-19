@@ -1,0 +1,18 @@
+{
+    "name": "hitc-kit/cms",
+    "type": "metapackage",
+    "description": "Content management system.",
+    "minimum-stability": "stable",
+    "license": "GPL-3.0-only",
+    "authors": [
+        {
+            "name": "Maksim Voskresenskii",
+            "email": "maksim@24webdev.ru"
+        }
+    ],
+    "scripts": {
+        "pre-install-cmd": [
+            "@composer create-project symfony/website-skeleton:^4.4 ./"
+        ]
+    }
+}
