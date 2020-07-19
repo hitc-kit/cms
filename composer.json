@@ -1,6 +1,6 @@
 {
     "name": "hitc-kit/cms",
-    "type": "metapackage",
+    "type": "project",
     "description": "Content management system.",
     "minimum-stability": "stable",
     "license": "GPL-3.0-only",
