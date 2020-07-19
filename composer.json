@@ -1,6 +1,6 @@
 {
     "name": "hitc-kit/cms",
-    "type": "metapackage",
+    "type": "project",
     "description": "Content management system.",
     "license": "GPL-3.0-only",
     "authors": [
@@ -11,6 +11,8 @@
     ],
     "scripts": {
         "post-create-project-cmd": [
+            "php -r \"array_map('rmdir', glob('./*', GLOB_ONLYDIR));\"",
+            "php -r \"array_map('unlink', glob('./*'));\"",
             "@composer create-project symfony/website-skeleton:^4.4 ."
         ]
     }
