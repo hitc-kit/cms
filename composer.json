@@ -11,6 +11,9 @@
     ],
     "scripts": {
         "post-create-project-cmd": [
+            "php -r \"array_map('unlink', glob('./vendor/composer/*'));\"",
+            "php -r \"array_map('rmdir', glob('./vendor/*', GLOB_ONLYDIR));\"",
+            "php -r \"array_map('unlink', glob('./vendor/*'));\"",
             "php -r \"array_map('rmdir', glob('./*', GLOB_ONLYDIR));\"",
             "php -r \"array_map('unlink', glob('./*'));\"",
             "@composer create-project symfony/website-skeleton:^4.4 ."
