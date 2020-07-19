@@ -1,6 +1,6 @@
 {
     "name": "hitc-kit/cms",
-    "type": "project",
+    "type": "metapackage",
     "description": "Content management system.",
     "license": "GPL-3.0-only",
     "authors": [
@@ -11,7 +11,7 @@
     ],
     "scripts": {
         "post-create-project-cmd": [
-            "@composer create-project symfony/website-skeleton:^4.4 ./"
+            "@composer create-project symfony/website-skeleton:^4.4 ."
         ]
     }
 }
