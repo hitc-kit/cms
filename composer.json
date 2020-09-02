@@ -17,7 +17,8 @@
     "scripts": {
         "post-create-project-cmd": [
             "HITcKit\\Cms\\Prepare::postCreateProject",
-            "@composer create-project symfony/website-skeleton:4.4.* ."
+            "@composer create-project symfony/website-skeleton:4.4.* .",
+            "@composer require hitc-kit/core-bundle"
         ]
     }
 }
