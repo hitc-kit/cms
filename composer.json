@@ -9,13 +9,14 @@
             "email": "maksim@24webdev.ru"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "HITcKit\\Cms\\": ""
+        }
+    },
     "scripts": {
         "post-create-project-cmd": [
-            "php -r \"array_map('unlink', glob('./vendor/composer/*'));\"",
-            "php -r \"array_map('rmdir', glob('./vendor/*', GLOB_ONLYDIR));\"",
-            "php -r \"array_map('unlink', glob('./vendor/*'));\"",
-            "php -r \"array_map('rmdir', glob('./*', GLOB_ONLYDIR));\"",
-            "php -r \"array_map('unlink', glob('./*'));\"",
+            "HITcKit\\Cms\\Prepare::postCreateProject",
             "@composer create-project symfony/website-skeleton:4.4.* ."
         ]
     }
