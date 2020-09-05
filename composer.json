@@ -1,7 +1,8 @@
 {
     "name": "hitc-kit/cms",
     "type": "project",
-    "description": "Content management system.",
+    "description": "Система управления контентом",
+    "minimum-stability": "dev",
     "license": "GPL-3.0-only",
     "authors": [
         {
@@ -20,5 +21,8 @@
             "@composer create-project symfony/website-skeleton:4.4.* .",
             "@composer require hitc-kit/core-bundle"
         ]
+    },
+    "conflict": {
+        "doctrine/common": "3.*"
     }
 }

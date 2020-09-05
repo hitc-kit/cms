@@ -1,1 +1,1 @@
-Content management system.
+Система управления контентом
