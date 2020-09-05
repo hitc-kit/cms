@@ -17,8 +17,8 @@
     "scripts": {
         "post-create-project-cmd": [
             "HITcKit\\Cms\\Prepare::postCreateProject",
-            "@composer create-project --remove-vcs symfony/website-skeleton:\"^4.4\" .",
-            "@composer require --update-with-dependencies hitc-kit/core-bundle:dev-master"
+            "@composer create-project --no-interaction symfony/website-skeleton:\"^4.4\" .",
+            "@composer require --no-interaction --update-with-all-dependencies hitc-kit/core-bundle:dev-master"
         ]
     }
 }
