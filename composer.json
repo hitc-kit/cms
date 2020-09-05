@@ -18,8 +18,7 @@
         "post-create-project-cmd": [
             "HITcKit\\Cms\\Prepare::postCreateProject",
             "@composer create-project --remove-vcs symfony/website-skeleton:\"^4.4\" .",
-            "@composer require --update-with-dependencies doctrine/common:\"^2.11\"",
-            "@composer require hitc-kit/core-bundle:dev-master"
+            "@composer require --update-with-dependencies hitc-kit/core-bundle:dev-master"
         ]
     }
 }
