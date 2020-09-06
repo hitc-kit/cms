@@ -9,6 +9,8 @@
             "email": "maksim@24webdev.ru"
         }
     ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "HITcKit\\Cms\\": ""
@@ -20,7 +22,7 @@
             "@composer create-project -n symfony/website-skeleton:\"^4.4\" .",
             "@composer require -n --update-with-all-dependencies doctrine/common:\"^2.11\"",
             "@composer config extra.symfony.allow-contrib true",
-            "@composer require -n hitc-kit/cms-pack:dev-master"
+            "@composer require -n hitc-kit/cms-pack"
         ]
     }
 }
