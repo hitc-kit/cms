@@ -19,8 +19,10 @@
             "HITcKit\\Cms\\Prepare::postCreateProject",
             "@composer create-project -n symfony/website-skeleton:\"^4.4\" .",
             "@composer require -n --update-with-all-dependencies doctrine/common:\"^2.11\"",
+            "@composer config prefer-stable true",
+            "@composer config minimum-stability dev",
             "@composer config extra.symfony.allow-contrib true",
-            "@composer require -n hitc-kit/cms-pack:@dev"
+            "@composer require -n hitc-kit/cms-pack"
         ]
     }
 }
