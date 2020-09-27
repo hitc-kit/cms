@@ -2,7 +2,7 @@
     "name": "hitc-kit/cms",
     "type": "project",
     "description": "Система управления контентом",
-    "license": "GPL-3.0-only",
+    "license": "MIT",
     "authors": [
         {
             "name": "Maksim Voskresenskii",
