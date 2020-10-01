@@ -11,12 +11,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "HITcKit\\Cms\\": ""
+            "HitcKit\\Cms\\": ""
         }
     },
     "scripts": {
         "post-create-project-cmd": [
-            "HITcKit\\Cms\\Prepare::postCreateProject",
+            "HitcKit\\Cms\\Prepare::postCreateProject",
             "@composer create-project --ansi -n symfony/website-skeleton:\"^4.4\" .",
             "@composer require --ansi -n --update-with-all-dependencies doctrine/common:\"^2.11\"",
             "@composer config prefer-stable true",

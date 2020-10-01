@@ -1,9 +1,8 @@
 <?php
 
-namespace HITcKit\Cms;
+namespace HitcKit\Cms;
 
 use Composer\Script\Event;
-use Composer\Installer\PackageEvent;
 use FilesystemIterator;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
