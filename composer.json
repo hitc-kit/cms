@@ -22,7 +22,8 @@
             "@composer config prefer-stable true",
             "@composer config minimum-stability dev",
             "@composer config extra.symfony.allow-contrib true",
-            "@composer require --ansi -n hitc-kit/cms-pack"
+            "@composer require --ansi -n hitc-kit/cms-pack",
+            "@php bin/console ckeditor:install"
         ]
     }
 }
